@@ -1,1 +1,19 @@
-/* Put your CSS here */
+body {
+    background: purple;
+    display: flex;
+}
+.header {
+    color: blue;
+    display: flex;
+    flex: 0 1 auto;
+}
+.page-title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.subdirectory-list {
+    background: white;
+    display: flex;
+    flex: 0 1 auto;
+    list-style: none;
+}
