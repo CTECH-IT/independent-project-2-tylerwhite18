@@ -1,19 +1,49 @@
 body {
     background: purple;
     display: flex;
+    flex-direction: column;
 }
-.header {
-    color: blue;
+.top-part {
+    align-items: center;
+    background: gray;
     display: flex;
     flex: 0 1 auto;
+    flex-direction: column;
 }
 .page-title {
+    color: blue;
+    background: pink;
     flex: 1 1 auto;
+    margin: 1em 0em 0em 0em;
+    padding: 0px;
     text-align: center;
 }
 .subdirectory-list {
     background: white;
     display: flex;
     flex: 0 1 auto;
+    flex-direction: column;
     list-style: none;
+    padding: 0;
+}
+.list-member {
+    flex: 1 1 auto;
+    margin: 0em 3em;
+}
+.directory-element {
+    background: rgb(63, 63, 233);
+    border-radius: 5px;
+    color: rgb(204, 200, 148);
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+}
+.directory-element:hover {
+    background: rgb(204, 200, 148);
+    color: rgb(63, 63, 233);
+}
+@media all and (orientation: landscape) {
+    .subdirectory-list {
+        flex-direction: row;
+    }
 }
