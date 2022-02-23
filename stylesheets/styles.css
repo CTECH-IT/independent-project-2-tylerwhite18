@@ -12,14 +12,13 @@ body {
 }
 .page-title {
     color: blue;
-    background: pink;
     flex: 1 1 auto;
     margin: 1em 0em 0em 0em;
     padding: 0px;
     text-align: center;
 }
 .subdirectory-list {
-    background: white;
+    align-items: center;
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
@@ -34,7 +33,7 @@ body {
     background: rgb(63, 63, 233);
     border-radius: 5px;
     color: rgb(204, 200, 148);
-    padding: 2px;
+    padding: 0em 2em;
     text-align: center;
     text-decoration: none;
 }
@@ -43,6 +42,11 @@ body {
     color: rgb(63, 63, 233);
 }
 @media all and (orientation: landscape) {
+    .top-part {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     .subdirectory-list {
         flex-direction: row;
     }
