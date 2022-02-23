@@ -41,6 +41,9 @@ body {
     background: rgb(204, 200, 148);
     color: rgb(63, 63, 233);
 }
+.main-text {
+    flex: 1 1 auto;
+}
 @media all and (orientation: landscape) {
     .top-part {
         position: fixed;
