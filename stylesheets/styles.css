@@ -4,6 +4,8 @@ body {
     flex-direction: column;
 }
 header {
+    flex: 0 1 auto;
+    height: 8em;
     position: relative;
 }
 .top-part {
