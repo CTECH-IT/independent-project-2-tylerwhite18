@@ -16,21 +16,22 @@ header {
 .backing-images {
     display: flex;
     flex-direction: row;
+    height: 8em;
     justify-content: center;
     width: 100%;
 }
 .header-image, .header-image-wide {
+    max-height: 100%;
     max-width: 100%;
 }
-.header-image {
+.header-image-left, .header-image-right {
     display: none;
     flex: 1 1 auto;
     height: 8em;
 }
 .header-image-wide {
     flex: 0 1 auto;
-    max-height: 8em;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .directory-container {
     display: flex;
@@ -81,8 +82,15 @@ header {
         top: 0;
         width: 100%;
     }
-    .header-image {
-        display: inline;
+    .header-image-right, .header-image-left {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-image-right {
+        justify-content: flex-end;
+    }
+    .header-image-left {
+        justify-content: flex-start;
     }
     .subdirectory-list {
         flex-direction: row;
