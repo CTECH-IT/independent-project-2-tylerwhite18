@@ -12,7 +12,6 @@ header {
     align-items: center;
     background: black;
     display: flex;
-    flex: 0 1 auto;
     flex-direction: column;
 }
 .backing-images {
@@ -52,7 +51,7 @@ header {
 .subdirectory-list {
     align-items: center;
     display: flex;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     flex-direction: column;
     list-style: none;
     padding: 0;
@@ -63,15 +62,17 @@ header {
 }
 .directory-element {
     background: rgb(143, 136, 78);
+    border: 2px solid rgb(198, 199, 192);
     border-radius: 5px;
-    color: rgb(197, 223, 245);
+    color: rgb(198, 199, 192);
     padding: 0em 2em;
     text-align: center;
     text-decoration: none;
     transition: transform 133ms ease-in-out;
 }
 .directory-element:hover {
-    background: rgb(197, 223, 245);
+    background: rgb(198, 199, 192);
+    border-color: rgb(143, 136, 78);
     color: rgb(143, 136, 78);
     transform: scale(5.0);
 }
