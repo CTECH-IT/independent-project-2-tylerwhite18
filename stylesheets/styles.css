@@ -82,6 +82,10 @@ header {
     flex: 1 1 auto;
     margin: 0em 2em;
 }
+.attention-grabber {
+    display: flex;
+    flex-direction: column;
+}
 p {
     margin: 0;
     padding: 0;
@@ -117,6 +121,9 @@ p {
     }
     .header-image-left {
         justify-content: flex-start;
+    }
+    .attention-grabber {
+        flex-direction: row;
     }
 }
 @media all and (min-width: 975px) {
