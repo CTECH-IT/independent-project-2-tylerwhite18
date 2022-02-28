@@ -52,11 +52,13 @@ header {
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
     padding: 0;
 }
 .list-member {
+    display: flex;
+    justify-content: center;
     flex: 1 1 auto;
     margin: 0em 3em;
 }
@@ -115,9 +117,6 @@ p {
     }
     .header-image-left {
         justify-content: flex-start;
-    }
-    .subdirectory-list {
-        flex-direction: row;
     }
 }
 @media all and (min-width: 975px) {
