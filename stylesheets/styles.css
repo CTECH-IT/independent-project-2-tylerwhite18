@@ -76,7 +76,7 @@ header {
     background: rgb(198, 199, 192);
     border-color: rgb(143, 136, 78);
     color: rgb(143, 136, 78);
-    transform: scale(5.0);
+    transform: scale(1.2);
 }
 .main-text {
     flex: 1 1 auto;
