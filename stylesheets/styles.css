@@ -1,5 +1,5 @@
 body {
-    background: purple;
+    background: rgb(97, 97, 97);
     display: flex;
     flex-direction: column;
 }
@@ -83,12 +83,31 @@ header {
     margin: 0em 2em;
 }
 .attention-grabber {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+}
+.mission-statement {
+    background:rgb(194, 194, 194);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 1em;
+    max-width: 40em;
+    padding: 6px;
+}
+.main-open-image {
+    margin: 3em;
 }
 p {
+    font-size: 20px;
+    line-height: 1.4;
     margin: 0;
     padding: 0;
+}
+h3 {
+    text-align: center;
+    font-size: 25px;
 }
 .clickable-top-link {
     background: rgb(133, 131, 131);
@@ -103,7 +122,39 @@ p {
     right: 8px;
     text-decoration: none;
 }
+footer {
+    position: relative;
+}
+.social-image-list {
+    background: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+}
+.soial-type {
+    flex: 1 1 auto;
+}
+/*social-link:hover {
+
+}*/
+.social-image {
+    height: 3em;
+    padding: 0px 4px;
+    width: 3em;
+}
 @media all and (orientation: landscape) {
+    p {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 28px;
+    }
     .top-part {
         position: fixed;
         top: 0;
