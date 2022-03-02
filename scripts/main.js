@@ -9,12 +9,12 @@ function getImage(link) {
     return link.getAttribute('data-image-url');
 }
 
-function rippleEffect(inpt) {
+function rippleEffect(inpt) { //the problem
     for (let i = inpt - 1; i >= 0; i--) {
        
     }
     for (let j = inpt + 1; j <= linkArray.length; j++) {
-        
+
     }
 }
 
