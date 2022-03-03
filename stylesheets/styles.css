@@ -67,6 +67,7 @@ header {
     border: 2px solid rgb(198, 199, 192);
     border-radius: 5px;
     color: rgb(198, 199, 192);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     padding: 0em 2em;
     text-align: center;
     text-decoration: none;
