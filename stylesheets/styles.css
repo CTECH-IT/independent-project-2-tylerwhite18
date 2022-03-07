@@ -89,16 +89,21 @@ header {
     flex-direction: column;
     justify-content: space-around;
 }
-.mission-statement {
+.mission-statement, .scholar-info, .food-info {
     background:rgb(194, 194, 194);
     border: 2px solid black;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 1em;
     max-width: 40em;
     padding: 6px;
 }
 .main-open-image {
     margin: 3em;
+    max-height: 30em;
+    max-width: 22em;
 }
 p {
     font-size: 20px;
@@ -132,11 +137,13 @@ footer {
     display: flex;
     flex-direction: row;
     height: 3em;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
     position: fixed;
+    width: 100%;
 }
 .soial-type {
     flex: 1 1 auto;
@@ -148,6 +155,21 @@ footer {
     height: 3em;
     padding: 0px 4px;
     width: 3em;
+}
+.donation-link, .bank-list {
+    color: rgb(46, 82, 148);
+    text-decoration: none;
+}
+.main-support {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.food-bank-container, .scholar-container {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
 }
 @media all and (orientation: landscape) {
     p {
@@ -175,6 +197,9 @@ footer {
         justify-content: flex-start;
     }
     .attention-grabber {
+        flex-direction: row;
+    }
+    .food-bank-container, .scholar-container {
         flex-direction: row;
     }
 }
