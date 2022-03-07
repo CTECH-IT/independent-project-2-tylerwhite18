@@ -4,14 +4,6 @@ const IMAGE_CHOICE = '[data-image-role="trigger"]';
 let imgArray = [].slice.call(document.querySelectorAll(IMAGE_SELECTOR)); //creates an array of every image
 let linkArray = [].slice.call(document.querySelectorAll(IMAGE_CHOICE)); //creates an array of every clickable link representing an image
 
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
 function getImage(link) { //for a given link, returns the associated image
     'use strict';
     return link.getAttribute('data-image-url');
@@ -22,10 +14,12 @@ function setImage(img, num) { //void, sets the target array element to the speci
 }
 
 function rippleEffect(inpt) { //truly a problem
+    window.alert('hover'); //just to test that the function is called from the event listener
     let targetImage = getImage(linkArray[inpt]);
-    for (let i = 0; i <= Math.abs(imgArray.length - inpt); i++) { //the for loop is the problem, abs() shouldnt be used
-       let top = inpt + i; 
-       let bottom = inpt - i;
+    for (let i = 0; i < imgArray.length; i++) { 
+       let diff = (imgArray - linkArray) / 2; //imgArray is longer
+       let top = diff + inpt + i; 
+       let bottom = diff + inpt - i;
        if (top < imgArray.length) {
            if (top < imgArray.length - 1) {
                 setImage(targetImage, top + 1); //change to target image
@@ -38,7 +32,6 @@ function rippleEffect(inpt) { //truly a problem
            }
            setImage(getImage(linkArray[bottom]), bottom); //return to normal image
        }
-       sleep(1000);
     }
 }
 
