@@ -129,6 +129,8 @@ h3 {
     text-decoration: none;
 }
 footer {
+    flex: 1 1 auto;
+    height: 3em;
     position: relative;
 }
 .social-image-list {
